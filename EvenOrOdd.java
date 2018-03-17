@@ -5,12 +5,18 @@ public class EvenOrOdd {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter and integer: ");
 		int i = scan.nextInt();
-
-		if((i%2) == 0)
+		int j=i;
+		while(j > 1){
+			j -= 2;
+		}
+		
+		if(j==0)
 			System.out.println("The integer "+i+" is even.");
 		
-		else
+		else if(j==1)
 			System.out.println("The integer "+i+" is odd.");
-			
+		
+		else
+			System.out.println("Well... crap.");
 	}
 }
